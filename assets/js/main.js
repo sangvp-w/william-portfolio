@@ -76,7 +76,7 @@ const CONTENT = {
     ],
     experience:[
       {
-        role:"Kỹ sư Hệ thống / Cloud", org:"FPT International Telecom (FTI)", orgUrl:"https://fti.fpt.vn/",
+        role:"Kỹ sư Hệ thống / Cloud", org:"CTY TNHH MTV VIỄN THÔNG QUỐC TẾ FPT", orgUrl:"https://fti.fpt.vn/",
         start:"03/2026", end:"Hiện tại",
         bullets:[
           "Cung cấp hỗ trợ kỹ thuật L2 và phối hợp xử lý các yêu cầu L3 cho môi trường Dev, UAT và Production.",
@@ -87,7 +87,7 @@ const CONTENT = {
         ]
       },
       {
-        role:"Kỹ sư Hệ thống / Cloud", org:"JPT (JProTech)", orgUrl:"https://jprotech.vn/",
+        role:"Kỹ sư Hệ thống / Cloud", org:"CTY CP CÔNG NGHỆ JPROTECH", orgUrl:"https://jprotech.vn/",
         start:"03/2023", end:"03/2026",
         bullets:[
           "Triển khai và vận hành hạ tầng hybrid, kết hợp hệ thống On-Premises với OCI (Exadata Cloud@Customer, OEM, AVDF, OLVM-KVM).",
@@ -98,12 +98,12 @@ const CONTENT = {
         ]
       },
       {
-        role:"Front-End Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
+        role:"Front-End Developer Intern", org:"CTY TNHH R2S", orgUrl:"https://r2s.vn/",
         start:"02/2022", end:"05/2022",
         bullets:["Tham gia xây dựng và phát triển nền tảng thực tập.","Nghiên cứu và thực hành các kỹ thuật phát triển Front-End nâng cao.","Thiết kế giao diện website với ReactJS.","Công nghệ: HTML, CSS, JavaScript, Bootstrap, ReactJS, GitHub."]
       },
       {
-        role:"Full-Stack Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
+        role:"Full-Stack Developer Intern", org:"CTY TNHH R2S", orgUrl:"https://r2s.vn/",
         start:"10/2021", end:"01/2022",
         bullets:["Tham gia xây dựng và phát triển nền tảng thực tập.","Nghiên cứu, đánh giá và lựa chọn công nghệ phù hợp.","Thiết kế kiến trúc nghiệp vụ và cơ sở dữ liệu.","Công nghệ: SQL, .NET, Entity Framework, jQuery, GitHub."]
       }
@@ -190,7 +190,7 @@ const CONTENT = {
     ],
     experience:[
       {
-        role:"System / Cloud Engineer", org:"FPT International Telecom (FTI)", orgUrl:"https://fti.fpt.vn/",
+        role:"System / Cloud Engineer", org:"FPT INTERNATIONAL TELECOM COMPANY LIMITED", orgUrl:"https://fti.fpt.vn/",
         start:"03/2026", end:"Present",
         bullets:[
           "Provide L2 technical support and contribute to L3 support for Dev/UAT/Prod environments.",
@@ -201,7 +201,7 @@ const CONTENT = {
         ]
       },
       {
-        role:"System / Cloud Engineer", org:"JPT (JProTech)", orgUrl:"https://jprotech.vn/",
+        role:"System / Cloud Engineer", org:"JPROTECH TECHNOLOGY JOINT STOCK COMPANY", orgUrl:"https://jprotech.vn/",
         start:"03/2023", end:"03/2026",
         bullets:[
           "Deployed & managed hybrid infrastructure across On-Premises and OCI (Exadata Cloud@Customer, OEM, AVDF, OLVM-KVM).",
@@ -212,12 +212,12 @@ const CONTENT = {
         ]
       },
       {
-        role:"Front-End Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
+        role:"Front-End Developer Intern", org:"R2S COMPANY LIMITED", orgUrl:"https://r2s.vn/",
         start:"02/2022", end:"05/2022",
         bullets:["Built and developed an internship platform.","Learned and practiced advanced front-end development.","Designed websites using ReactJS.","Skills: HTML, CSS, JavaScript, Bootstrap, ReactJS, GitHub."]
       },
       {
-        role:"Full-Stack Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
+        role:"Full-Stack Developer Intern", org:"R2S COMPANY LIMITED", orgUrl:"https://r2s.vn/",
         start:"10/2021", end:"01/2022",
         bullets:["Built and developed an internship platform.","Researched efficient and suitable technology options.","Designed business architecture and databases.","Skills: SQL, .NET, Entity Framework, jQuery, GitHub."]
       }
