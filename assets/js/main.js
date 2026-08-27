@@ -9,22 +9,22 @@ const UI = {
     "hero.statusTitle":"TRẠNG THÁI HỆ THỐNG","hero.statExp":"Kinh nghiệm","hero.years":"năm",
     "hero.statCert":"Chứng chỉ","hero.active":"đang hiệu lực","hero.statClients":"Trọng tâm","hero.statSupport":"Cấp hỗ trợ",
     "hero.scroll":"cuộn xuống",
-    "about.title":"Tóm tắt bản thân",
+    "about.title":"Về tôi",
     "exp.title":"Kinh nghiệm làm việc",
     "proj.title":"Dự án tiêu biểu",
     "skills.title":"Kỹ năng & Công nghệ",
     "certs.title":"Chứng chỉ",
-    "edu.title":"Học vấn & Nền tảng",
+    "edu.title":"Học vấn & Hành trình",
     "edu.eduHead":"Học vấn","edu.langHead":"Ngoại ngữ","edu.awardsHead":"Giải thưởng",
     "edu.degree":"Cử nhân Công nghệ Thông tin — Kỹ thuật Phần mềm",
-    "edu.langNote":"(Nghe & Đọc)","edu.referencesHead":"Bài viết tham chiếu từ SIU",
-    "freelance.title":"Dịch vụ Thiết kế Website - Freelance","freelance.projectsTitle":"Các dự án Website đã triển khai",
+    "edu.langNote":"(Nghe & Đọc)","edu.referencesHead":"Bài viết tiêu biểu từ SIU",
+    "freelance.title":"Dịch vụ thiết kế website tự do","freelance.projectsTitle":"Các website đã triển khai",
     "contact.title":"Liên hệ với tôi",
-    "contact.sub":"Nếu anh/chị cần trao đổi về Oracle, hạ tầng hệ thống, tư vấn kỹ thuật hoặc website theo yêu cầu, hãy liên hệ với tôi.",
+    "contact.sub":"Nếu anh/chị cần trao đổi về Oracle, hạ tầng hệ thống, tư vấn kỹ thuật hoặc website theo yêu cầu, tôi luôn sẵn sàng kết nối.",
     "contact.email":"Email","contact.phone":"Phone / Zalo / Viber / WhatsApp","contact.location":"Địa chỉ",
-    "contact.locationValue":"Quận 5, TP. Hồ Chí Minh","contact.formTitle":"Gửi lời nhắn","contact.formNote":"Ứng dụng email của bạn sẽ mở sẵn với nội dung gửi đến SangVP.work@gmail.com.","contact.name":"Tên của bạn","contact.reply":"Email của bạn","contact.message":"Bạn cần tôi hỗ trợ gì?","contact.send":"Mở email để gửi",
-    "footer.built":"Designed &amp; built by <a href=\"https://www.facebook.com/phsangg.20s\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Vo Phuoc Sang</strong></a>",
-    "footer.status":"hệ thống hoạt động ổn định"
+    "contact.locationValue":"Quận 5, TP. Hồ Chí Minh","contact.formTitle":"Gửi lời nhắn","contact.formNote":"Ứng dụng email của bạn sẽ mở sẵn, với nội dung được gửi đến SangVP.work@gmail.com.","contact.name":"Họ và tên","contact.reply":"Email liên hệ","contact.message":"Bạn muốn trao đổi điều gì?","contact.send":"Mở email để gửi",
+    "footer.built":"Thiết kế và phát triển bởi <a href=\"https://www.facebook.com/phsangg.20s\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Vo Phuoc Sang</strong></a>",
+    "footer.status":"hệ thống đang hoạt động ổn định"
   },
   en: {
     "nav.about":"About","nav.experience":"Experience","nav.projects":"Projects","nav.freelance":"Freelance",
@@ -56,68 +56,68 @@ const CONTENT = {
   vi:{
     name:"Võ Phước Sang (William)",
     nameHtml:'Võ Phước Sang <span class="t-alias">aka</span> <span class="t-william">William</span>',
-    title:"Kỹ sư Oracle Cloud, Hệ thống & Dịch vụ",
+    title:"Kỹ sư Hệ thống & Oracle Cloud",
     location:"Quận 5, TP. Hồ Chí Minh",
     boot:[
       {type:"line", html:'<span class="t-prompt">sangvp@portfolio</span><span class="t-key">:~$</span> <span class="t-cmd">whoami</span>'},
       {type:"name"},
-      {type:"line", html:'<span class="t-title">Kỹ sư Oracle Cloud, Hệ thống &amp; Dịch vụ</span>'},
+      {type:"line", html:'<span class="t-title">Kỹ sư Hệ thống &amp; Oracle Cloud</span>'},
       {type:"line", html:'<span class="t-comment">Quận 5, TP. Hồ Chí Minh</span>'},
       {type:"gap"},
       {type:"line", fullWidth:true, fullWidthStart:true, html:'<span class="t-prompt">sangvp@portfolio</span><span class="t-key">:~$</span> <span class="t-cmd">systemctl status career.service</span>'},
-      {type:"line", fullWidth:true, html:'<span class="t-comment">● career.service — active (running) since 03/2023, hơn 3 năm uptime</span>'},
-      {type:"line", fullWidth:true, html:'<span class="t-comment">  Chuyên môn chính: hệ sinh thái Oracle — Systems · Cloud · Services · Products · Enterprise Infrastructure</span>'},
+      {type:"line", fullWidth:true, html:'<span class="t-comment">● career.service — active (running) từ 03/2023, hơn 3 năm kinh nghiệm</span>'},
+      {type:"line", fullWidth:true, html:'<span class="t-comment">  Chuyên môn: hệ sinh thái Oracle — Hệ thống · Cloud · Dịch vụ · Sản phẩm · Hạ tầng doanh nghiệp</span>'},
     ],
     about:[
-      "Kỹ sư Hệ thống & Cloud với hơn 3 năm kinh nghiệm triển khai và vận hành hạ tầng CNTT trong môi trường doanh nghiệp, bao gồm hệ thống On-Premises và Oracle Cloud Infrastructure (OCI).",
-      "Có nền tảng vững về hạ tầng hệ thống như máy chủ, lưu trữ, ảo hóa, hệ điều hành, sao lưu và giám sát; đồng thời có kinh nghiệm làm việc với các mô hình cloud trong môi trường Dev/UAT/Prod thực tế.",
-      "Định hướng phát triển chuyên sâu theo Cloud và DevOps, với trọng tâm là hệ sinh thái Oracle và khả năng mở rộng theo nhu cầu chuyển đổi của doanh nghiệp.",
-      "Bên cạnh công việc hạ tầng, tôi nhận thiết kế và phát triển website freelance theo yêu cầu - từ landing page, website giới thiệu doanh nghiệp đến website bán hàng và hệ thống có luồng chức năng riêng. Mỗi dự án được tư vấn theo mục tiêu thực tế, ưu tiên giao diện responsive, tốc độ tải, SEO on-page và khả năng chuyển đổi khách hàng."
+      "Kỹ sư Hệ thống & Cloud với hơn 3 năm kinh nghiệm triển khai và vận hành hạ tầng CNTT cho doanh nghiệp, từ hệ thống tại chỗ đến Oracle Cloud Infrastructure (OCI).",
+      "Có nền tảng vững về máy chủ, lưu trữ, ảo hóa, hệ điều hành, sao lưu và giám sát; đồng thời trực tiếp làm việc với các môi trường Dev, UAT và Production trên cloud.",
+      "Định hướng phát triển chuyên sâu về Cloud và DevOps, lấy hệ sinh thái Oracle làm trọng tâm và sẵn sàng đồng hành cùng nhu cầu chuyển đổi số của doanh nghiệp.",
+      "Song song với công việc hạ tầng, tôi nhận thiết kế và phát triển website theo yêu cầu — từ landing page, website doanh nghiệp đến trang thương mại điện tử và hệ thống có quy trình riêng. Mỗi dự án được tư vấn theo mục tiêu kinh doanh, ưu tiên trải nghiệm responsive, tốc độ tải, SEO on-page và hiệu quả chuyển đổi."
     ],
     experience:[
       {
-        role:"Kỹ sư Hệ thống / Cloud", org:"FPT International Telecom Company Limited (FTI)",
+        role:"Kỹ sư Hệ thống / Cloud", org:"FPT International Telecom (FTI)", orgUrl:"https://fti.fpt.vn/",
         start:"03/2026", end:"Hiện tại",
         bullets:[
-          "Hỗ trợ kỹ thuật cấp L2 và tham gia hỗ trợ L3 cho các môi trường Dev/UAT/Prod.",
-          "Xử lý sự cố, phân tích nguyên nhân gốc rễ và phối hợp với Oracle Support qua Service Request (SR).",
-          "Soạn thảo tài liệu vận hành, báo cáo kỹ thuật và các khuyến nghị bảo trì cho khách hàng.",
-          "Presales kỹ thuật cho các giải pháp Oracle: làm rõ yêu cầu, định hình phương án và hỗ trợ trình bày giải pháp.",
-          "Đào tạo chuyên môn về các dịch vụ Oracle OCI qua workshop chuyên sâu cho các trung tâm nội bộ."
+          "Cung cấp hỗ trợ kỹ thuật L2 và phối hợp xử lý các yêu cầu L3 cho môi trường Dev, UAT và Production.",
+          "Xử lý sự cố, phân tích nguyên nhân gốc rễ và làm việc với Oracle Support thông qua Service Request (SR).",
+          "Soạn tài liệu vận hành, báo cáo kỹ thuật và đề xuất phương án bảo trì phù hợp cho khách hàng.",
+          "Tham gia presales kỹ thuật cho giải pháp Oracle: làm rõ yêu cầu, xây dựng phương án và hỗ trợ trình bày giải pháp.",
+          "Tổ chức các workshop chuyên sâu về dịch vụ OCI cho các đơn vị kỹ thuật nội bộ."
         ]
       },
       {
-        role:"Kỹ sư Hệ thống / Cloud", org:"Công ty Cổ phần Công nghệ Jprotech",
+        role:"Kỹ sư Hệ thống / Cloud", org:"JPT (JProTech)", orgUrl:"https://jprotech.vn/",
         start:"03/2023", end:"03/2026",
         bullets:[
-          "Triển khai & vận hành hạ tầng hybrid gồm On-Premises và OCI (Exadata Cloud@Customer, OEM, AVDF, OLVM-KVM).",
-          "Hỗ trợ L2/L3 cho môi trường production, tập trung xử lý sự cố và phân tích nguyên nhân gốc rễ.",
-          "Quản lý SR với Oracle Support và chủ trì các buổi họp kỹ thuật để giải quyết nghẽn hạ tầng.",
-          "Bảo trì hệ thống qua health check định kỳ, giám sát và bảo trì phòng ngừa.",
-          "Soạn thảo tài liệu kỹ thuật — hướng dẫn vận hành, báo cáo bảo trì, khuyến nghị cho khách hàng."
+          "Triển khai và vận hành hạ tầng hybrid, kết hợp hệ thống On-Premises với OCI (Exadata Cloud@Customer, OEM, AVDF, OLVM-KVM).",
+          "Cung cấp hỗ trợ L2/L3 cho môi trường Production, tập trung vào xử lý sự cố và phân tích nguyên nhân gốc rễ.",
+          "Quản lý Service Request với Oracle Support và điều phối các buổi trao đổi kỹ thuật để tháo gỡ điểm nghẽn hạ tầng.",
+          "Duy trì độ ổn định của hệ thống bằng health check định kỳ, giám sát liên tục và bảo trì phòng ngừa.",
+          "Soạn tài liệu kỹ thuật, gồm hướng dẫn vận hành, báo cáo bảo trì và khuyến nghị dành cho khách hàng."
         ]
       },
       {
-        role:"Front-End Developer Intern", org:"R2S Joint Stock Company",
+        role:"Front-End Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
         start:"02/2022", end:"05/2022",
-        bullets:["Xây dựng và phát triển nền tảng thực tập.","Học hỏi và thực hành phát triển Front-End nâng cao.","Thiết kế website với ReactJS.","Kỹ năng: HTML, CSS, JavaScript, Bootstrap, ReactJS, GitHub."]
+        bullets:["Tham gia xây dựng và phát triển nền tảng thực tập.","Nghiên cứu và thực hành các kỹ thuật phát triển Front-End nâng cao.","Thiết kế giao diện website với ReactJS.","Công nghệ: HTML, CSS, JavaScript, Bootstrap, ReactJS, GitHub."]
       },
       {
-        role:"Full-Stack Developer Intern", org:"R2S Joint Stock Company",
+        role:"Full-Stack Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
         start:"10/2021", end:"01/2022",
-        bullets:["Xây dựng và phát triển nền tảng thực tập.","Nghiên cứu lựa chọn công nghệ hiệu quả, phù hợp.","Thiết kế kiến trúc nghiệp vụ và cơ sở dữ liệu.","Kỹ năng: SQL, .NET, Entity Framework, jQuery, GitHub."]
+        bullets:["Tham gia xây dựng và phát triển nền tảng thực tập.","Nghiên cứu, đánh giá và lựa chọn công nghệ phù hợp.","Thiết kế kiến trúc nghiệp vụ và cơ sở dữ liệu.","Công nghệ: SQL, .NET, Entity Framework, jQuery, GitHub."]
       }
     ],
     projects:[
-      {tag:"ORACLE CLOUD", role:"Triển khai, vận hành & presales kỹ thuật", name:"Oracle Cloud Infrastructure (OCI)", bullets:["Triển khai và vận hành môi trường OCI cho workload Dev/UAT/Prod: Compute, IAM, Network, Storage, Monitoring và Network Firewall.","Hỗ trợ chuyển đổi workload ứng dụng và cơ sở dữ liệu từ On-Premises lên OCI; theo dõi chi phí và báo cáo sử dụng.","Tư vấn giải pháp, xây dựng phương án kỹ thuật và phối hợp Oracle Support để xử lý các vấn đề phức tạp."]},
-      {tag:"ORACLE DATABASE", role:"Nền tảng database enterprise", name:"Exadata & Oracle Database Services", bullets:["Triển khai, vận hành và health check Exadata Cloud@Customer; hỗ trợ cấp phát VM Cluster, ECPU, bộ nhớ và lưu trữ.","Làm việc với Oracle AI Autonomous Database, AI Cloud Database Services và Oracle AI Database@AWS.","Phân tích sự cố dung lượng backup, rà soát retention policy và điều phối xử lý cùng chuyên gia Oracle."]},
+      {tag:"ORACLE CLOUD", role:"Triển khai, vận hành & presales kỹ thuật", name:"Oracle Cloud Infrastructure (OCI)", bullets:["Triển khai và vận hành workload Dev, UAT, Production trên OCI: Compute, IAM, Networking, Storage, Monitoring và Network Firewall.","Hỗ trợ chuyển đổi workload ứng dụng và cơ sở dữ liệu từ On-Premises lên OCI; đồng thời theo dõi chi phí và báo cáo sử dụng.","Tư vấn giải pháp, xây dựng phương án kỹ thuật và phối hợp với Oracle Support để xử lý các vấn đề phức tạp."]},
+      {tag:"ORACLE DATABASE", role:"Nền tảng cơ sở dữ liệu doanh nghiệp", name:"Exadata & Oracle Database Services", bullets:["Triển khai, vận hành và health check Exadata Cloud@Customer; hỗ trợ cấp phát VM Cluster, ECPU, bộ nhớ và lưu trữ.","Làm việc với Oracle AI Autonomous Database, AI Cloud Database Services và Oracle AI Database@AWS.","Phân tích tình trạng tăng dung lượng backup, rà soát chính sách lưu giữ và phối hợp xử lý cùng chuyên gia Oracle."]},
       {tag:"SECURITY & OBSERVABILITY", role:"Bảo mật, giám sát & vận hành", name:"Oracle Enterprise Platforms", bullets:["Triển khai OEM cho Host, Oracle Database và ASM; thiết lập policy cảnh báo và email notification.","Triển khai OCI Data Safe, Audit Vault & Database Firewall (AVDF) và Oracle Secure Backup.","Thực hiện giám sát, health check, bảo trì phòng ngừa, xử lý sự cố và báo cáo kỹ thuật."]},
       {tag:"SYSTEMS", role:"Hạ tầng, ảo hóa & lưu trữ", name:"Enterprise Infrastructure Delivery", bullets:["Thực hiện POC và triển khai Oracle Linux Virtualization Manager (OLVM-KVM), VMware vSphere / ESXi và KVM.","Triển khai máy chủ enterprise, IBM Storage SAN và Pure Storage FlashArray.","Xây dựng tài liệu vận hành, quy trình kỹ thuật và khuyến nghị cải tiến hạ tầng."]},
     ],
     freelance:[
-      {tag:"FREELANCE", role:"Từ ý tưởng đến sản phẩm", name:"Thiết kế website theo yêu cầu", bullets:["Nhận thiết kế và phát triển website theo từng mục tiêu - từ landing page, website doanh nghiệp đến hệ thống có luồng chức năng riêng.","Tư vấn rõ ràng về phạm vi, trải nghiệm người dùng, tính năng và cách triển khai trước khi bắt đầu.","Tối ưu SEO on-page, hiệu năng, cấu trúc nội dung và khả năng hiển thị trên công cụ tìm kiếm." ]},
-      {tag:"E-COMMERCE", role:"Website bán hàng - kính áp tròng màu", name:"Ponpish", bullets:["Nền tảng e-commerce Nhật Bản cho sản phẩm kính áp tròng màu, hỗ trợ đăng nhập, xếp hạng sản phẩm và lịch sử xem.","Tổ chức danh mục theo thương hiệu, 1day / 1month, sản phẩm bán chạy, giá và thông tin khuyến mãi.","Hỗ trợ hành trình mua hàng và giới thiệu gói giao định kỳ cho dòng sản phẩm lens trong suốt."], link:"https://ponpish.jp/"},
-      {tag:"E-COMMERCE", role:"Website bán hàng - premium pet food", name:"Dhuman", bullets:["Official mall Hàn Quốc cho thương hiệu premium pet food, tập trung vào dòng thức ăn tươi cho chó.","Có catalog sản phẩm, flash sale, giỏ hàng, ưu đãi thành viên và nội dung chăm sóc dinh dưỡng theo nhu cầu khớp, da, mắt.","Tối ưu cách trình bày khuyến mãi, gói sản phẩm và luồng chuyển đổi cho khách hàng mua sắm trực tuyến."], link:"https://www.dhuman.co.kr/"},
+      {tag:"FREELANCE", role:"Từ ý tưởng đến sản phẩm hoàn chỉnh", name:"Thiết kế website theo yêu cầu", bullets:["Thiết kế và phát triển website theo đúng mục tiêu sử dụng — từ landing page, website doanh nghiệp đến hệ thống có quy trình riêng.","Tư vấn rõ ràng về phạm vi, trải nghiệm người dùng, tính năng và phương án triển khai trước khi bắt đầu.","Tối ưu SEO on-page, hiệu năng, cấu trúc nội dung và khả năng hiển thị trên công cụ tìm kiếm." ]},
+      {tag:"E-COMMERCE", role:"Website bán kính áp tròng màu", name:"Ponpish", bullets:["Nền tảng thương mại điện tử Nhật Bản dành cho kính áp tròng màu, hỗ trợ đăng nhập, bảng xếp hạng sản phẩm và lịch sử xem.","Sắp xếp danh mục theo thương hiệu, dòng 1day / 1month, sản phẩm bán chạy, mức giá và chương trình khuyến mãi.","Tối ưu hành trình mua sắm và giới thiệu gói giao định kỳ cho dòng lens trong suốt."], link:"https://ponpish.jp/"},
+      {tag:"E-COMMERCE", role:"Website thương mại điện tử thức ăn thú cưng cao cấp", name:"Dhuman", bullets:["Trang bán hàng chính thức tại Hàn Quốc cho thương hiệu thức ăn thú cưng cao cấp, tập trung vào dòng thức ăn tươi cho chó.","Tích hợp danh mục sản phẩm, flash sale, giỏ hàng, ưu đãi thành viên và nội dung dinh dưỡng cho khớp, da và mắt.","Tối ưu cách trình bày khuyến mãi, gói sản phẩm và hành trình chuyển đổi của khách hàng mua sắm trực tuyến."], link:"https://www.dhuman.co.kr/"},
       {tag:"CORPORATE SERVICE", role:"Website dịch vụ - thiết kế slide", name:"FlashSlide", bullets:["Website giới thiệu dịch vụ thiết kế PowerPoint chuyên nghiệp cho doanh nghiệp.","Trình bày rõ các nhóm dịch vụ, dự án, mẫu thiết kế và lời kêu gọi bắt đầu dự án.","Tập trung chuyển đổi các ý tưởng phức tạp thành bài thuyết trình trực quan, nhất quán thương hiệu."], link:"https://flashslide.com/"},
       {tag:"CORPORATE", role:"Website doanh nghiệp - creative technology", name:"Waves Group", bullets:["Website doanh nghiệp cho hệ sinh thái sáng tạo nội dung ứng dụng công nghệ.","Giới thiệu năng lực sản xuất và phân phối content đa nền tảng, đa quốc gia; chuẩn hóa và tự động hóa quy trình.","Cấu trúc nội dung tập trung vào công nghệ, hệ sinh thái nội dung, quản trị vận hành và cơ hội hợp tác."], link:"https://wavesgroup.com.vn/"},
       {tag:"PROFESSIONAL SERVICE", role:"Website dịch vụ pháp lý", name:"Thanh Sen Group", bullets:["Website giới thiệu hệ sinh thái dịch vụ pháp lý: luật sư, thẩm định giá, thừa phát lại, trọng tài thương mại và đấu giá tài sản.","Thiết kế luồng liên hệ/tư vấn rõ ràng, gồm liên hệ trực tiếp và tư vấn qua Zalo.","Tổ chức nội dung theo từng nhóm dịch vụ để cá nhân, doanh nghiệp và nhà đầu tư dễ tiếp cận."], link:"https://www.thanhsengroup.com.vn/"},
@@ -190,7 +190,7 @@ const CONTENT = {
     ],
     experience:[
       {
-        role:"System / Cloud Engineer", org:"FPT International Telecom Company Limited (FTI)",
+        role:"System / Cloud Engineer", org:"FPT International Telecom (FTI)", orgUrl:"https://fti.fpt.vn/",
         start:"03/2026", end:"Present",
         bullets:[
           "Provide L2 technical support and contribute to L3 support for Dev/UAT/Prod environments.",
@@ -201,7 +201,7 @@ const CONTENT = {
         ]
       },
       {
-        role:"System / Cloud Engineer", org:"Jprotech Technology Joint Stock Company",
+        role:"System / Cloud Engineer", org:"JPT (JProTech)", orgUrl:"https://jprotech.vn/",
         start:"03/2023", end:"03/2026",
         bullets:[
           "Deployed & managed hybrid infrastructure across On-Premises and OCI (Exadata Cloud@Customer, OEM, AVDF, OLVM-KVM).",
@@ -212,12 +212,12 @@ const CONTENT = {
         ]
       },
       {
-        role:"Front-End Developer Intern", org:"R2S Joint Stock Company",
+        role:"Front-End Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
         start:"02/2022", end:"05/2022",
         bullets:["Built and developed an internship platform.","Learned and practiced advanced front-end development.","Designed websites using ReactJS.","Skills: HTML, CSS, JavaScript, Bootstrap, ReactJS, GitHub."]
       },
       {
-        role:"Full-Stack Developer Intern", org:"R2S Joint Stock Company",
+        role:"Full-Stack Developer Intern", org:"R2S", orgUrl:"https://r2s.vn/",
         start:"10/2021", end:"01/2022",
         bullets:["Built and developed an internship platform.","Researched efficient and suitable technology options.","Designed business architecture and databases.","Skills: SQL, .NET, Entity Framework, jQuery, GitHub."]
       }
@@ -379,7 +379,7 @@ function render(){
   exp.innerHTML = c.experience.map(e => `
     <div class="log-entry reveal">
       <div class="log-meta">${e.start} <span class="sep">→</span> ${e.end}</div>
-      <div class="log-org">${e.org}</div>
+      <div class="log-org">${e.orgUrl ? `<a href="${e.orgUrl}" target="_blank" rel="noopener noreferrer">${e.org}</a>` : e.org}</div>
       <div class="log-role">${e.role}</div>
       <ul class="log-bullets">${e.bullets.map(b => `<li>${b}</li>`).join("")}</ul>
     </div>
