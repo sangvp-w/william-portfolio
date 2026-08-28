@@ -109,6 +109,12 @@ const CONTENT = {
       }
     ],
     projects:[
+      {tag:"CUSTOMER LANDSCAPE", role:"Kinh nghiệm triển khai và hỗ trợ đa ngành", name:"Nhóm khách hàng đã đồng hành", wide:true, sub:[
+        {b:"Tài chính", s:"Ngân hàng, tài chính và chứng khoán — các môi trường yêu cầu cao về tính ổn định, bảo mật và vận hành liên tục."},
+        {b:"Khối công", s:"Cơ quan chính phủ, đơn vị giáo dục và trường học — hỗ trợ các nhu cầu hạ tầng, nền tảng và dịch vụ công nghệ."},
+        {b:"Năng lượng & tiện ích", s:"Dầu khí, nhiên liệu, điện lực và cấp thoát nước — các lĩnh vực đòi hỏi hạ tầng vận hành ổn định và liên tục."},
+        {b:"Doanh nghiệp", s:"Các tổ chức thuộc nhiều quy mô và lĩnh vực, với nhu cầu triển khai, vận hành, giám sát và tối ưu hệ thống."}
+      ]},
       {tag:"ORACLE CLOUD", role:"Triển khai, vận hành & presales kỹ thuật", name:"Oracle Cloud Infrastructure (OCI)", bullets:["Triển khai và vận hành workload Dev, UAT, Production trên OCI: Compute, IAM, Networking, Storage, Monitoring và Network Firewall.","Hỗ trợ chuyển đổi workload ứng dụng và cơ sở dữ liệu từ On-Premises lên OCI; đồng thời theo dõi chi phí và báo cáo sử dụng.","Tư vấn giải pháp, xây dựng phương án kỹ thuật và phối hợp với Oracle Support để xử lý các vấn đề phức tạp."]},
       {tag:"ORACLE DATABASE", role:"Nền tảng cơ sở dữ liệu doanh nghiệp", name:"Exadata & Oracle Database Services", bullets:["Triển khai, vận hành và health check Exadata Cloud@Customer; hỗ trợ cấp phát VM Cluster, ECPU, bộ nhớ và lưu trữ.","Làm việc với Oracle AI Autonomous Database, AI Cloud Database Services và Oracle AI Database@AWS.","Phân tích tình trạng tăng dung lượng backup, rà soát chính sách lưu giữ và phối hợp xử lý cùng chuyên gia Oracle."]},
       {tag:"SECURITY & OBSERVABILITY", role:"Bảo mật, giám sát & vận hành", name:"Oracle Enterprise Platforms", bullets:["Triển khai OEM cho Host, Oracle Database và ASM; thiết lập policy cảnh báo và email notification.","Triển khai OCI Data Safe, Audit Vault & Database Firewall (AVDF) và Oracle Secure Backup.","Thực hiện giám sát, health check, bảo trì phòng ngừa, xử lý sự cố và báo cáo kỹ thuật."]},
@@ -223,6 +229,12 @@ const CONTENT = {
       }
     ],
     projects:[
+      {tag:"CUSTOMER LANDSCAPE", role:"Cross-industry delivery and support experience", name:"Customer Segments Served", wide:true, sub:[
+        {b:"Financial services", s:"Banking, finance, and securities environments with high requirements for availability, security, and continuous operations."},
+        {b:"Public sector & education", s:"Government agencies, education organizations, and schools with infrastructure, platform, and technology-service needs."},
+        {b:"Energy & utilities", s:"Oil and gas, fuel, power, and water utilities—sectors that require stable, continuous infrastructure operations."},
+        {b:"Enterprises", s:"Organizations across a range of sizes and industries, with needs for system delivery, operations, monitoring, and optimization."}
+      ]},
       {tag:"ORACLE CLOUD", role:"Implementation, operations & technical presales", name:"Oracle Cloud Infrastructure (OCI)", bullets:["Deploy and operate OCI Dev/UAT/Prod workloads across Compute, IAM, Networking, Storage, Monitoring, and Network Firewall.","Support application and database workload migration from on-premises to OCI, including cost monitoring and usage reporting.","Advise on solution options, develop technical approaches, and collaborate with Oracle Support on complex issues."]},
       {tag:"ORACLE DATABASE", role:"Enterprise database platforms", name:"Exadata & Oracle Database Services", bullets:["Deploy, operate, and health-check Exadata Cloud@Customer; support VM cluster provisioning and ECPU, memory, and storage allocation.","Work with Oracle AI Autonomous Database, AI Cloud Database Services, and Oracle AI Database@AWS.","Analyze backup storage growth, review retention policies, and coordinate resolution with Oracle specialists."]},
       {tag:"SECURITY & OBSERVABILITY", role:"Security, monitoring & operations", name:"Oracle Enterprise Platforms", bullets:["Deploy OEM for Hosts, Oracle Databases, and ASM; configure alerting policies and email notifications.","Deploy OCI Data Safe, Audit Vault & Database Firewall (AVDF), and Oracle Secure Backup.","Perform monitoring, health checks, preventive maintenance, incident troubleshooting, and technical reporting."]},
