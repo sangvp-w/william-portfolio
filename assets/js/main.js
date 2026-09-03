@@ -335,6 +335,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNav();
   initContactForm();
   initCursor();
+  initVisitorCounter();
 
   document.getElementById("themeToggle").addEventListener("click", toggleTheme);
   document.getElementById("langToggle").addEventListener("click", toggleLang);
@@ -360,6 +361,7 @@ function toggleLang(){
   bootTerminal();
   placeProfilePhoto();
   initReveal();
+  updateVisitorCounterLabel();
 }
 
 /* ==========================================================
@@ -603,4 +605,34 @@ function initContactForm(){
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     window.location.href = `mailto:SangVP.work@gmail.com?subject=${subject}&body=${body}`;
   });
+}
+
+/* ==========================================================
+   VISITOR COUNTER
+========================================================== */
+function updateVisitorCounterLabel(){
+  const label = document.getElementById("visitorLabel");
+  if (label) label.textContent = currentLang === "vi" ? "lượt xem trang" : "page views";
+}
+
+function initVisitorCounter(){
+  // Record every page load, including browser reloads, with a lightweight public counter API.
+  const counter = document.getElementById("visitorCount");
+  updateVisitorCounterLabel();
+  if (!counter) return;
+
+  const host = window.location.hostname || "local-preview";
+  const siteKey = `sangvp-portfolio-${host.toLowerCase().replace(/[^a-z0-9]/g, "-")}`;
+  const endpoint = `https://countapi.mileshilliard.com/api/v1/hit/${encodeURIComponent(siteKey)}`;
+
+  fetch(endpoint, {cache: "no-store"})
+    .then(response => {
+      if (!response.ok) throw new Error(`Counter request failed: ${response.status}`);
+      return response.json();
+    })
+    .then(data => {
+      if (typeof data.value !== "number") throw new Error("Invalid counter response");
+      counter.textContent = new Intl.NumberFormat(currentLang === "vi" ? "vi-VN" : "en-US").format(data.value);
+    })
+    .catch(() => { counter.textContent = "—"; });
 }

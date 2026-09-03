@@ -48,6 +48,7 @@ html{scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100
 
 body{
   margin:0;
+  padding-bottom:88px;
   background:var(--bg);
   color:var(--text);
   font-family:var(--font-body);
@@ -493,12 +494,16 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
 /* ============================================================
    FOOTER — Attribution and portfolio availability indicator.
 ============================================================ */
-.footer{position:relative; z-index:1; border-top:1px solid var(--line-soft); padding:26px 28px;}
+.footer{position:fixed; right:0; bottom:0; left:0; z-index:100; border-top:1px solid var(--line-soft); padding:18px 28px; background:color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter:blur(10px);}
 .footer-inner{
   max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;
   flex-wrap:wrap; gap:10px; font-size:13px; color:var(--text-faint);
 }
 .footer-status{display:flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:12px;}
+.footer-meta{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+.visitor-counter{display:flex; align-items:center; gap:7px; font-family:var(--font-display); font-size:12px; color:var(--text-faint);}
+.visitor-counter svg{width:15px; height:15px; color:var(--accent);}
+#visitorCount{min-width:1.6em; color:var(--text); font-weight:700; font-variant-numeric:tabular-nums;}
 .led-sm{width:6px; height:6px;}
 
 /* ============================================================
@@ -514,6 +519,7 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
 }
 
 @media (max-width:760px){
+  body{padding-bottom:120px;}
   .nav{backdrop-filter:none;}
   .nav-links{
     position:fixed; top:59px; left:0; right:0; bottom:0; z-index:200;
@@ -546,6 +552,8 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
 }
 
 @media (max-width:480px){
+  .footer{padding:14px 18px;}
+  .footer-meta{gap:10px 14px;}
   .nav-inner{padding:12px 18px;}
   .brand-prompt{font-size:13px;}
   .project-grid, .cert-grid{grid-template-columns:minmax(0,1fr);}
