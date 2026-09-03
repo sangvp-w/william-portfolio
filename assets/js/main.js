@@ -318,6 +318,7 @@ let currentTheme = "dark";
 ========================================================== */
 // Restore saved preferences, render content, and attach all interactive behaviors.
 document.addEventListener("DOMContentLoaded", () => {
+  resetToHeroAfterReload();
   const savedLang = localStorage.getItem("sang-lang");
   const savedTheme = localStorage.getItem("sang-theme");
   if (savedLang) currentLang = savedLang;
@@ -340,6 +341,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("themeToggle").addEventListener("click", toggleTheme);
   document.getElementById("langToggle").addEventListener("click", toggleLang);
 });
+
+function resetToHeroAfterReload(){
+  // Keep regular anchor links intact, but start from the introduction after a browser reload.
+  const navigation = performance.getEntriesByType("navigation")[0];
+  const isReload = navigation
+    ? navigation.type === "reload"
+    : performance.navigation?.type === performance.navigation.TYPE_RELOAD;
+
+  if (!isReload) return;
+
+  history.replaceState(null, "", `${location.pathname}${location.search}#hero`);
+  window.scrollTo(0, 0);
+}
 
 /* ==========================================================
    THEME / LANG TOGGLES
