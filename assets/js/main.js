@@ -318,7 +318,6 @@ let currentTheme = "dark";
 ========================================================== */
 // Restore saved preferences, render content, and attach all interactive behaviors.
 document.addEventListener("DOMContentLoaded", () => {
-  resetToHeroAfterReload();
   const savedLang = localStorage.getItem("sang-lang");
   const savedTheme = localStorage.getItem("sang-theme");
   if (savedLang) currentLang = savedLang;
@@ -351,9 +350,15 @@ function resetToHeroAfterReload(){
 
   if (!isReload) return;
 
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   history.replaceState(null, "", `${location.pathname}${location.search}#hero`);
-  window.scrollTo(0, 0);
+
+  window.addEventListener("load", () => {
+    requestAnimationFrame(() => window.scrollTo(0, 0));
+  }, {once:true});
 }
+
+resetToHeroAfterReload();
 
 /* ==========================================================
    THEME / LANG TOGGLES
