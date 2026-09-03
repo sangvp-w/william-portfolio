@@ -18,7 +18,7 @@ const UI = {
     "edu.eduHead":"Học vấn","edu.langHead":"Ngoại ngữ","edu.awardsHead":"Giải thưởng",
     "edu.degree":"Cử nhân Công nghệ Thông tin — Kỹ thuật Phần mềm",
     "edu.langNote":"(Nghe & Đọc)","edu.referencesHead":"Bài viết tiêu biểu từ SIU",
-    "freelance.title":"Dịch vụ thiết kế website tự do","freelance.projectsTitle":"Các website đã triển khai",
+    "freelance.title":"Dịch vụ thiết kế & phát triển website","freelance.projectsTitle":"Các website đã triển khai",
     "contact.title":"Liên hệ với tôi",
     "contact.sub":"Nếu anh/chị cần trao đổi về Oracle, hạ tầng hệ thống, tư vấn kỹ thuật hoặc website theo yêu cầu, tôi luôn sẵn sàng kết nối.",
     "contact.email":"Email","contact.phone":"Phone / Zalo / Viber / WhatsApp","contact.location":"Địa chỉ",
