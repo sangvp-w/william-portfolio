@@ -466,6 +466,28 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
 }
 .contact-label{font-family:var(--font-display); font-size:11px; color:var(--text-faint); letter-spacing:.08em; text-transform:uppercase;}
 .contact-value{font-size:16px; font-weight:700; word-break:break-word;}
+.bank-transfer{
+  margin-top:24px; padding:clamp(20px,3vw,30px); display:grid; grid-template-columns:minmax(220px,320px) 1fr; gap:clamp(24px,4vw,48px); align-items:center;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); box-shadow:var(--shadow-glow);
+}
+.bank-qr-wrap{aspect-ratio:1; display:grid; place-items:center; overflow:hidden; padding:10px; background:#fff; border:1px solid var(--line); border-radius:var(--radius);}
+.bank-qr-image{width:100%; height:100%; object-fit:contain; border-radius:6px;}
+.bank-qr-missing{height:100%; padding:24px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; text-align:center; color:#52606d;}
+.bank-qr-missing[hidden]{display:none;}
+.bank-qr-missing span{font-family:var(--font-display); font-size:42px; font-weight:800; color:#0f6b3c;}
+.bank-qr-missing small{font-size:12px; line-height:1.5; overflow-wrap:anywhere;}
+.bank-kicker{margin:0 0 8px; font:700 11px/1.4 var(--font-display); letter-spacing:.12em; color:var(--accent);}
+.bank-details h3{font-family:var(--font-display); font-size:clamp(20px,2.6vw,27px); margin:0 0 8px;}
+.bank-note{margin:0 0 22px; color:var(--text-dim); font-size:14px;}
+.bank-info-list{margin:0; display:flex; flex-direction:column;}
+.bank-info-list div{display:grid; grid-template-columns:minmax(120px,.65fr) 1fr; gap:16px; padding:11px 0; border-bottom:1px dashed var(--line);}
+.bank-info-list dt{color:var(--text-dim); font-size:13px;}
+.bank-info-list dd{margin:0; color:var(--text); font-weight:700; overflow-wrap:anywhere;}
+.bank-account-number{font:800 clamp(18px,2.4vw,23px)/1.2 var(--font-display); color:var(--accent) !important; letter-spacing:.025em;}
+.bank-copy-button{margin-top:20px; min-height:44px; display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:11px 15px; border:0; border-radius:7px; background:var(--accent); color:#06130d; font-weight:800; cursor:pointer; transition:transform .2s var(--ease), filter .2s var(--ease);}
+.bank-copy-button:hover{transform:translateY(-2px); filter:brightness(1.06);}
+.bank-copy-button svg{width:17px; height:17px; flex:none;}
+.bank-copy-status{min-height:20px; margin:8px 0 0; color:var(--accent); font-size:12px;}
 .contact-form{margin-top:24px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow-glow);}
 .contact-form-head{font-size:17px; font-weight:800; margin:0 0 5px;}
 .contact-form-note{margin:0 0 18px; color:var(--text-dim); font-size:13.5px;}
@@ -545,6 +567,8 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
 
   .section{padding:70px 20px;}
   .edu-grid{grid-template-columns:1fr;}
+  .bank-transfer{grid-template-columns:1fr;}
+  .bank-qr-wrap{width:min(100%,340px); margin:0 auto;}
   .form-grid{grid-template-columns:1fr;}
   .award-list li{flex-direction:column; gap:2px;}
 }
@@ -556,6 +580,8 @@ html[data-theme="light"] .icon-moon{opacity:1; transform:rotate(0) scale(1);}
   .brand-prompt{font-size:13px;}
   .project-grid, .cert-grid{grid-template-columns:minmax(0,1fr);}
   .contact-sub{margin-top:0;}
+  .bank-info-list div{grid-template-columns:1fr; gap:3px;}
+  .bank-copy-button{width:100%;}
 }
 
 @media (max-width:350px){

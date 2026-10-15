@@ -224,6 +224,31 @@
           <span class="contact-value" data-i18n="contact.locationValue">District 5, Ho Chi Minh City</span>
         </div>
       </div>
+      <div class="bank-transfer reveal" aria-labelledby="bankTransferTitle">
+        <div class="bank-qr-wrap">
+          <img class="bank-qr-image" id="bankQrImage" src="assets/images/vietcombank-qr.png" alt="VietQR - Vietcombank - VO PHUOC SANG - 0171003480840">
+          <div class="bank-qr-missing" id="bankQrMissing" hidden>
+            <span aria-hidden="true">QR</span>
+            <small data-i18n="bank.qrMissing">Add the supplied QR image to assets/images/vietcombank-qr.png</small>
+          </div>
+        </div>
+        <div class="bank-details">
+          <p class="bank-kicker" data-i18n="bank.kicker">BANK TRANSFER</p>
+          <h3 id="bankTransferTitle" data-i18n="bank.title">Bank transfer information</h3>
+          <p class="bank-note" data-i18n="bank.note">Scan the QR code or copy the account number below.</p>
+          <dl class="bank-info-list">
+            <div><dt data-i18n="bank.bank">Bank</dt><dd>Vietcombank</dd></div>
+            <div><dt data-i18n="bank.owner">Account holder</dt><dd>VO PHUOC SANG</dd></div>
+            <div><dt data-i18n="bank.account">Account number</dt><dd class="bank-account-number">0171003480840</dd></div>
+            <div><dt data-i18n="bank.branch">Branch</dt><dd>PGD L&ecirc; H&#7891;ng Phong</dd></div>
+          </dl>
+          <button class="bank-copy-button" id="copyBankAccount" type="button" data-account="0171003480840">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"/></svg>
+            <span data-i18n="bank.copy">Copy account number</span>
+          </button>
+          <p class="bank-copy-status" id="bankCopyStatus" role="status" aria-live="polite"></p>
+        </div>
+      </div>
       <form class="contact-form" id="contactForm">
         <h3 class="contact-form-head" data-i18n="contact.formTitle">Send a message</h3>
         <p class="contact-form-note" data-i18n="contact.formNote">Your email app will open with the details addressed to SangVP.work@gmail.com.</p>

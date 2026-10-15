@@ -4,6 +4,8 @@
 // Translated static interface labels, keyed by language and element data attribute.
 const UI = {
   vi: {
+    "bank.kicker":"CHUY&#7874;N KHO&#7842;N NG&Acirc;N H&Agrave;NG","bank.title":"Th&ocirc;ng tin chuy&#7875;n kho&#7843;n","bank.note":"Qu&eacute;t m&atilde; QR ho&#7863;c sao ch&eacute;p s&#7889; t&agrave;i kho&#7843;n b&ecirc;n d&#432;&#7899;i.",
+    "bank.bank":"Ng&acirc;n h&agrave;ng","bank.owner":"Ch&#7911; t&agrave;i kho&#7843;n","bank.account":"S&#7889; t&agrave;i kho&#7843;n","bank.branch":"Chi nh&aacute;nh","bank.copy":"Sao ch&eacute;p s&#7889; t&agrave;i kho&#7843;n","bank.copied":"&#272;&atilde; sao ch&eacute;p s&#7889; t&agrave;i kho&#7843;n.","bank.qrMissing":"L&#432;u &#7843;nh QR &#273;&atilde; g&#7917;i v&agrave;o assets/images/vietcombank-qr.png",
     "nav.about":"Giới thiệu","nav.experience":"Kinh nghiệm","nav.projects":"Dự án","nav.freelance":"Freelance",
     "nav.skills":"Kỹ năng","nav.certs":"Chứng chỉ","nav.contact":"Liên hệ",
     "hero.statusTitle":"TRẠNG THÁI HỆ THỐNG","hero.statExp":"Kinh nghiệm","hero.years":"năm",
@@ -27,6 +29,8 @@ const UI = {
     "footer.status":"hệ thống đang hoạt động ổn định"
   },
   en: {
+    "bank.kicker":"BANK TRANSFER","bank.title":"Bank transfer information","bank.note":"Scan the QR code or copy the account number below.",
+    "bank.bank":"Bank","bank.owner":"Account holder","bank.account":"Account number","bank.branch":"Branch","bank.copy":"Copy account number","bank.copied":"Account number copied.","bank.qrMissing":"Save the supplied QR image as assets/images/vietcombank-qr.png",
     "nav.about":"About","nav.experience":"Experience","nav.projects":"Projects","nav.freelance":"Freelance",
     "nav.skills":"Skills","nav.certs":"Certifications","nav.contact":"Contact",
     "hero.statusTitle":"SYSTEM STATUS","hero.statExp":"Experience","hero.years":"yrs",
@@ -334,6 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initReveal();
   initNav();
   initContactForm();
+  initBankTransfer();
   initCursor();
   initVisitorCounter();
 
@@ -623,6 +628,40 @@ function initContactForm(){
     const subject = encodeURIComponent(`Portfolio contact from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
     window.location.href = `mailto:SangVP.work@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
+function initBankTransfer(){
+  // Keep the supplied banking QR local and provide a convenient account-number copy action.
+  const image = document.getElementById("bankQrImage");
+  const missing = document.getElementById("bankQrMissing");
+  const button = document.getElementById("copyBankAccount");
+  const status = document.getElementById("bankCopyStatus");
+
+  if (image && missing){
+    image.addEventListener("load", () => { image.hidden = false; missing.hidden = true; });
+    image.addEventListener("error", () => { image.hidden = true; missing.hidden = false; });
+    if (image.complete && !image.naturalWidth){ image.hidden = true; missing.hidden = false; }
+  }
+
+  if (!button || !status) return;
+  button.addEventListener("click", async () => {
+    const account = button.dataset.account;
+    try {
+      await navigator.clipboard.writeText(account);
+    } catch {
+      const input = document.createElement("textarea");
+      input.value = account;
+      input.setAttribute("readonly", "");
+      input.style.position = "fixed";
+      input.style.opacity = "0";
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      input.remove();
+    }
+    status.innerHTML = UI[currentLang]["bank.copied"];
+    window.setTimeout(() => { status.textContent = ""; }, 2400);
   });
 }
 
